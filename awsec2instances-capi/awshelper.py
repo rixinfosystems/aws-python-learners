@@ -15,7 +15,9 @@ def describe_instances():
     Describes all EC2 instances associated with an AWS account
     """
     # Create an EC2 Client
-    ec2_client = boto3.client('ec2', region_name=region)
+    # ec2_client = boto3.client('ec2', region_name=region)(
+    ec2_client = boto3.client('ec2', region_name=region,aws_access_key_id='AKIAUQFMCARLVSMYMIEN',
+         aws_secret_access_key= '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')
     # Describe instances
     response = ec2_client.describe_instances()
     print(response)
