@@ -4,7 +4,6 @@
 # It has methods for managing AWS EC2 instances.
 # It uses Client API (low-level) of Boto3.
 
-import sys
 import boto3
 import botocore
 
